@@ -1,0 +1,31 @@
+{
+  "name": "jenkins-node-test",
+  "version": "1.0.0",
+  "description": "Jenkins node app test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javieroc/jenkins-node-test.git"
+  },
+  "keywords": [
+    "jenkins",
+    "node",
+    "test"
+  ],
+  "author": "Javier Ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javieroc/jenkins-node-test/issues"
+  },
+  "homepage": "https://github.com/javieroc/jenkins-node-test#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
