@@ -1,10 +1,15 @@
 var request = require("supertest");
-var app = require("../index.js");
+var server = require("../index.js");
 
 describe("GET /", function() {
+  after(function(done) {
+    server.close();
+    done();
+  });
+
   it("respond with Hola mundo 7", function(done) {
     //navigate to root and check the the response is "hello world"
-    request(app)
+    request(server)
       .get("/")
       .expect("Hola mundo 7", done);
   });
