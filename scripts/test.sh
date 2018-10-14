@@ -2,6 +2,6 @@
 
 cd /home/connan/jenkins-node-test
 pm2 stop all
-npm test
+./node_modules/.bin/mocha ./test/test.js
 pm2 start index.js
 exit
