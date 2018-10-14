@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/jenkins-node-test
+cd /home/connan/jenkins-node-test
 git pull
 npm install
 pm2 restart all

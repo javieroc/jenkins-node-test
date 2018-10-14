@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/jenkins-node-test
+cd /home/connan/jenkins-node-test
 pm2 stop all
 npm test
 exit
