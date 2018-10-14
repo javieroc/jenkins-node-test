@@ -2,9 +2,8 @@ var request = require("supertest");
 var server = require("../index.js");
 
 describe("GET /", function() {
-  after(function(done) {
+  after(() => {
     server.close();
-    done();
   });
 
   it("respond with Hola mundo 13", function(done) {
