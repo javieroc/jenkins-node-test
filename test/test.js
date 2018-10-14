@@ -6,10 +6,12 @@ describe("GET /", function() {
     server.close();
   });
 
-  it("respond with Hola mundo 13", function(done) {
+  it("respond with Hola mundo 13", done => {
     //navigate to root and check the the response is "hello world"
     request(server)
       .get("/")
-      .expect("Hola mundo 13", done);
+      .expect("Hola mundo 13", () => {
+        done();
+      });
   });
 });
